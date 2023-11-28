@@ -19,6 +19,14 @@
         </div>
 
         <div class="bn-menu-row-switch-label regular-border">
+            <mat-slide-toggle aria-label="allow cdnlinks"  class="bn-menu-row-switch-fix"  [(ngModel)]="privacyInfo.cdnLinks" (change)="changePrivacy()"> </mat-slide-toggle> 
+            <div class="bn-menu-row-label">{{'privacy.cdnLinks' | translate }}</div>
+            <div class="bn-menu-icon">
+               
+            </div>
+        </div>
+
+        <div class="bn-menu-row-switch-label regular-border">
             <mat-slide-toggle  aria-label="allow images" class="bn-menu-row-switch-fix"  [(ngModel)]="privacyInfo.images" (change)="changePrivacy()"> </mat-slide-toggle> 
             <div class="bn-menu-row-label">{{'privacy.images' | translate }}</div>
            

@@ -4,7 +4,7 @@
         "video": "allow only this video",
         "link": "allow only this link",
         "image": "allow only this image",
-        "links": "allow Links",
+        "cdnLinks": "external Fonts",
         "images": "allow Images",
         "share": "allow share",
         "imprint": "Imprint",

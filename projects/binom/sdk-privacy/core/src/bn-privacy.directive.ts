@@ -7,8 +7,9 @@ import { BnPrivacyService } from './bn-privacy.service';
 
 
 @Directive({
-  selector: '[BnPrivacy]',
-  standalone: true
+  selector: '[bnPrivacy]',
+  standalone: true,
+  //providers:[BnPrivacyService]
 })
 export class BnPrivacyDirective  implements OnDestroy,OnInit {
   @Input('bnPrivacy') privacyType!: string;
@@ -44,6 +45,7 @@ export class BnPrivacyDirective  implements OnDestroy,OnInit {
   ngOnInit(){
     this.privacySubscription = this.privacyService.privacyInfo$.subscribe((privacy) => {
       this.privacyInfo = privacy;
+      console.log(this.privacyInfo)
       this.checkPrivacy();
    
     });
@@ -89,7 +91,7 @@ export class BnPrivacyDirective  implements OnDestroy,OnInit {
       (this.privacyType === 'videos' || this.privacyType === 'images')){
       this.renderer.setStyle(frameContainer,'width', width+'px');
       this.renderer.setStyle(frameContainer,'height', height+'px');
-      this.renderer.setStyle(frameContainer,'margin', '0 auto');
+
       this.renderer.addClass(frameContainer, 'bn-privacy-box');
       this.renderer.addClass(frameContainer, 'regular-border');
       const { BnInfoBoxComponent } = await import('@binom/sdk-core/info')

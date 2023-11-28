@@ -5,6 +5,7 @@
         "link": "nur diesen Link erlauben",
         "image": "nur diesen Bild erlauben",
         "links": "alle Links erlauben",
+        "cdnLinks": "externe Fonts",
         "images": "alle Bilder erlauben",
         "share": "Teilen erlauben",
         "imprint": "Impressum",

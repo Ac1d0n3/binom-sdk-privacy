@@ -15,7 +15,7 @@ import { BnPrivacySwitchMenuComponent } from '@binom/sdk-privacy/privacy-switch-
   imports: [CommonModule, RouterOutlet, RouterModule, MatToolbarModule, BnPrivacySwitchMenuComponent,
     BnTranslateSwitchMenuComponent, TranslateModule, MatSidenavModule, MatButtonModule, MatExpansionModule],
   templateUrl: './app.component.html',
-  providers: [BnPrivacyService, TranslateService],
+
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
@@ -37,7 +37,7 @@ export class AppComponent {
     },
     {
       title: 'components',
-      data: ['bn-privacy-switch','bn-privacy-content','bn-privacy-linklist']
+      data: ['bn-privacy-switch','bn-privacy-content']
     },
   ]
 

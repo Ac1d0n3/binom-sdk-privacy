@@ -1,1 +1,7 @@
-<p>bn-privacy-content works!</p>
+<ng-container *ngIf="allow">
+    <ng-content></ng-content>
+</ng-container>
+
+<ng-container *ngIf="!allow">
+    {{('privacy.content.'+this.type) | translate}}
+</ng-container>

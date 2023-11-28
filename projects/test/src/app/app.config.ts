@@ -6,6 +6,7 @@ import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { importProvidersFrom } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { BnPrivacyService } from '@binom/sdk-privacy/core';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -20,7 +21,8 @@ export const appConfig: ApplicationConfig = {
             useFactory: createTranslateLoader,
             deps: [HttpClient],
         },
-    })), provideAnimations()]
+        
+    })), provideAnimations(), BnPrivacyService]
 };
 
 
