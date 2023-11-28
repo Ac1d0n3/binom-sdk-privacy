@@ -1,7 +1,7 @@
 {
   "name": "@binom/sdk-privacy",
-  "version": "1.0.0",
-  "description": "theme Lib for projects",
+  "version": "1.0.1",
+  "description": "privacy Lib for projects",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ac1d0n3/binom-sdk-privacy"
@@ -21,7 +21,7 @@
   },
   "exports": {
     "./styles": {
-      "default": "./styles/theme.scss"
+      "default": "./styles/privacy.scss"
     }
   },
   "keywords": [
@@ -31,7 +31,7 @@
     "ngx-translate",
     "angular",
     "library",
-    "theme"
+    "privacy"
   ],
   "author": "Thomas Lindackers (binom)",
   "license": "MIT",
@@ -42,7 +42,7 @@
     "@angular/common": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@ngx-translate/core": "^15.0.0",
-    "@binom/sdk-core": "^1.0.8"
+    "@binom/sdk-core": "^1.0.9"
   },
   "dependencies": {
     "tslib": "^2.3.0"
