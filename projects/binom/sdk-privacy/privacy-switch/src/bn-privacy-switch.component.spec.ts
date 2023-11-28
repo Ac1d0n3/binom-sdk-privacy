@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SdkPrivacyComponent } from './sdk-privacy.component';
+import { BnPrivacySwitchComponent } from './bn-privacy-switch.component';
 
-describe('SdkPrivacyComponent', () => {
-  let component: SdkPrivacyComponent;
-  let fixture: ComponentFixture<SdkPrivacyComponent>;
+describe('BnPrivacySwitchComponent', () => {
+  let component: BnPrivacySwitchComponent;
+  let fixture: ComponentFixture<BnPrivacySwitchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SdkPrivacyComponent]
+      imports: [BnPrivacySwitchComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SdkPrivacyComponent);
+    fixture = TestBed.createComponent(BnPrivacySwitchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

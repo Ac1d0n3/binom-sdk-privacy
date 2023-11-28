@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SdkPrivacyService } from './sdk-privacy.service';
+import { BnPrivacyService } from './bn-privacy.service';
 
-describe('SdkPrivacyService', () => {
-  let service: SdkPrivacyService;
+describe('BnPrivacyService', () => {
+  let service: BnPrivacyService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SdkPrivacyService);
+    service = TestBed.inject(BnPrivacyService);
   });
 
   it('should be created', () => {

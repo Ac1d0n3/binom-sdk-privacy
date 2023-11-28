@@ -1,12 +1,57 @@
 {
   "name": "@binom/sdk-privacy",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "theme Lib for projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ac1d0n3/binom-sdk-privacy"
+  },
+  "bugs": {
+    "url": "https://github.com/Ac1d0n3/binom-sdk-privacy/issues"
+  },
+  "homepage": "https://binom.net",
+  "schematics": "./schematics/collection.json",
+  "ng-update": {
+    "migrations": "./schematics/migrations.json"
+  },
+  "scripts": {
+    "build:sass": "sass styles/privacy.scss assets/privacy.css",
+    "build:schematics": "tsc -p tsconfig.schematics.json",
+    "postbuild:schematics": "copyfiles schematics/migrations.json schematics/collection.json ../../../dist/binom/sdk-privacy/"
+  },
+  "exports": {
+    "./styles": {
+      "default": "./styles/theme.scss"
+    }
+  },
+  "keywords": [
+    "binom",
+    "sdk",
+    "material",
+    "ngx-translate",
+    "angular",
+    "library",
+    "theme"
+  ],
+  "author": "Thomas Lindackers (binom)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "@angular/common": "^17.0.0",
-    "@angular/core": "^17.0.0"
+    "@angular/theme": "^17.0.0",
+    "@ngx-translate/theme": "^15.0.0",
+    "@binom/sdk-core": "^1.0.8"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "devDependencies": {
+    "copyfiles": "file:../../node_modules/copyfiles",
+    "typescript": "file:../../node_modules/typescript"
+  }
 }
