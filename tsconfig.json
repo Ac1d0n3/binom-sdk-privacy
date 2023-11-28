@@ -1,8 +1,10 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "@binom/sdk-privacy/*": [
+        "./dist/binom/sdk-privacy/*"
+      ],
       "@binom/sdk-privacy": [
         "./dist/binom/sdk-privacy"
       ]

@@ -1,0 +1,27 @@
+{
+    "privacy": {
+        "videos": "alle Videos erlauben",
+        "video": "nur dieses Video erlauben",
+        "link": "nur diesen Link erlauben",
+        "image": "nur diesen Bild erlauben",
+        "links": "alle Links erlauben",
+        "images": "alle Bilder erlauben",
+        "share": "Teilen erlauben",
+        "imprint": "Impressum",
+        "dataPrivacy": "Datenschutz",
+        "privacySettings": "Datenschutz Einstellungen",
+        "saveSettings": "speichern",
+        "notShown":{
+            "videos": "Video von externer Quelle",
+            "links": "Link von externer Quelle",
+            "images": "Bild von externer Quelle",
+            "share": "Teilen erlauben"
+        },
+        "text":{
+            "videos": "Achtung externer Inhalt - video anzeigen",
+            "links": "Achtung externer Inhalt - Link anzeigen",
+            "images": "Achtung externer Inhalt - Bild anzeigen",
+            "share": "Achtung externer Inhalt - Teilen anzeigen"
+        }
+    }
+}

@@ -1,1 +1,9 @@
-<p>bn-privacy-switch-menu works!</p>
+<button mat-icon-button class="bn-button-fa" [matMenuTriggerFor]="menu" aria-label="theme"
+matTooltip="{{ 'tooltips.privacy' | translate }}" [matTooltipDisabled]="!enableToolTips">
+<i class="fas fa-shield-alt"></i>
+  </button>
+<mat-menu #menu="matMenu">
+    <div  (click)="$event.stopPropagation();" >
+        <bn-privacy-switch></bn-privacy-switch>
+    </div> 
+</mat-menu>

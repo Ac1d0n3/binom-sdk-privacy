@@ -1,1 +1,43 @@
-<p>bn-privacy-switch works!</p>
+
+<div class="bn-menu-group bn-privacy-switch">
+    <ng-container *ngIf="isInit">
+        
+        <div class="bn-menu-row-switch-label regular-border">
+            <mat-slide-toggle  aria-label="allow videos"  class="bn-menu-row-switch-fix" [(ngModel)]="privacyInfo.videos" (change)="changePrivacy()"> </mat-slide-toggle> 
+            <div class="bn-menu-row-label">{{'privacy.videos' | translate }}</div>
+            <div class="bn-menu-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+        </div>
+
+        <div class="bn-menu-row-switch-label regular-border">
+            <mat-slide-toggle aria-label="allow links"  class="bn-menu-row-switch-fix"  [(ngModel)]="privacyInfo.links" (change)="changePrivacy()"> </mat-slide-toggle> 
+            <div class="bn-menu-row-label">{{'privacy.links' | translate }}</div>
+            <div class="bn-menu-icon">
+               
+            </div>
+        </div>
+
+        <div class="bn-menu-row-switch-label regular-border">
+            <mat-slide-toggle  aria-label="allow images" class="bn-menu-row-switch-fix"  [(ngModel)]="privacyInfo.images" (change)="changePrivacy()"> </mat-slide-toggle> 
+            <div class="bn-menu-row-label">{{'privacy.images' | translate }}</div>
+           
+        </div>
+
+        <div class="bn-menu-row-switch-label regular-border">
+            <mat-slide-toggle  aria-label="allow share" class="bn-menu-row-switch-fix"  [(ngModel)]="privacyInfo.share" (change)="changePrivacy()"> </mat-slide-toggle> 
+            <div class="bn-menu-row-label">{{'privacy.share' | translate }}</div>
+           
+        </div>
+
+        <div class="bn-menu-row regular-border">
+            <mat-checkbox aria-label="save privacy settings" [(ngModel)]="privacyInfo.saveSettings" (change)="changePrivacy()">
+              {{'privacy.saveSettings' | translate }}</mat-checkbox>
+         
+        
+            
+        </div>
+
+    </ng-container>
+
+</div>

@@ -1,0 +1,27 @@
+{
+    "privacy": {
+        "videos": "allow Videos",
+        "video": "allow only this video",
+        "link": "allow only this link",
+        "image": "allow only this image",
+        "links": "allow Links",
+        "images": "allow Images",
+        "share": "allow share",
+        "imprint": "Imprint",
+        "dataPrivacy": "Data Privacy",
+        "privacySettings": "Privacy Settings",
+        "saveSettings": "save",
+        "notShown":{
+          "videos": "Video from external source",
+          "links": "Links erlauben",
+          "images": "Bilder erlauben",
+          "share": "Teilen erlauben"
+        },
+        "text":{
+          "videos": "External source - show video",
+          "links": "External source - show link",
+          "images": "External source - show image",
+          "share": "External source - show share"
+        }
+      }
+}
