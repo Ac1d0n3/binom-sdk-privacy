@@ -1,7 +1,5 @@
-<ng-container *ngIf="allow">
+@if(allow){
     <ng-content></ng-content>
-</ng-container>
-
-<ng-container *ngIf="!allow">
+} @else {
     {{('privacy.content.'+this.type) | translate}}
-</ng-container>
+}
