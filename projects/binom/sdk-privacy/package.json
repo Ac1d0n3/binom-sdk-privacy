@@ -1,6 +1,6 @@
 {
   "name": "@binom/sdk-privacy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "privacy Lib for projects",
   "repository": {
     "type": "git",
@@ -42,7 +42,7 @@
     "@angular/common": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@ngx-translate/core": "^15.0.0",
-    "@binom/sdk-core": "^1.1.0"
+    "@binom/sdk-core": "^1.1.2"
   },
   "dependencies": {
     "tslib": "^2.3.0"
